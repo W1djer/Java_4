@@ -19,8 +19,9 @@ public class home4_1 {
         list.add("тихо комбайн стоял на межи");
         list.add("влюбленная пара лежала во ржи");
         System.out.println(list);
-        Collections.swap(list, 0, 3);
-        Collections.swap(list, 1, 2);
+        for (int i = 0; i < list.size()/2; i++) {
+            Collections.swap(list, i, list.size()-i-1);
+        }
         System.out.println("Перевернутый список:");
         System.out.println(list);
 
